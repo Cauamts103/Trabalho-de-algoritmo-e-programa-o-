@@ -9,7 +9,6 @@ int main() {
     printf("\n* Programa CSMA-22 - Par ou Ímpar * ");
     printf("\n**************************************************************************************** \n");
  
-int main() {
     int numero;
 
     printf("Digite um numero: ");
