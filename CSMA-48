@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    printf("\n**************************************************************************************** ");
+    printf("\n* Aluno: Cauã da Silva de Matos Alves - RA:0027026 *");
+    printf("\n* Programa CSMA-48 - Menu com opção de sair * ");
+    printf("\n**************************************************************************************** \n");
+    
+  int opcao;
+
+    do {
+        printf("\n1 - Mensagem\n");
+        printf("2 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        if (opcao == 1) {
+            printf("Voce escolheu a mensagem!\n");
+        }
+
+    } while (opcao != 2);
+
+    printf("Programa encerrado.\n");
+
+    return 0;
+}
