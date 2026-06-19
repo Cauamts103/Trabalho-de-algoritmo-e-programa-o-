@@ -10,30 +10,20 @@ int main() {
     printf("\n* Programa JPA-14 - Classificação de Triângulos * ");
     printf("\n**************************************************************************************** \n");
  
-    float altCam, larCam, compCam;
-    float altCx, larCx, compCx;
+     float a, b, c;
 
-    printf("Altura do caminhao: ");
-    scanf("%f", &altCam);
+    printf("Digite os tres lados do triangulo: ");
+    scanf("%f %f %f", &a, &b, &c);
 
-    printf("Largura do caminhao: ");
-    scanf("%f", &larCam);
-
-    printf("Comprimento do caminhao: ");
-    scanf("%f", &compCam);
-
-    printf("Altura da caixa: ");
-    scanf("%f", &altCx);
-
-    printf("Largura da caixa: ");
-    scanf("%f", &larCx);
-
-    printf("Comprimento da caixa: ");
-    scanf("%f", &compCx);
-
-    int qtd = (altCam/altCx) * (larCam/larCx) * (compCam/compCx);
-
-    printf("Quantidade de caixas: %d", qtd);
+    if (a == b && b == c) {
+        printf("Triangulo Equilatero\n");
+    }
+    else if (a == b || a == c || b == c) {
+        printf("Triangulo Isosceles\n");
+    }
+    else {
+        printf("Triangulo Escaleno\n");
+    }
 
     return 0;
 }
